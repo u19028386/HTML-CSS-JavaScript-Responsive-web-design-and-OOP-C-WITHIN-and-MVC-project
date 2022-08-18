@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using u19028386_HomeW04.Models;
 
 namespace u19028386_HomeW04.Controllers
 {
@@ -66,7 +67,16 @@ namespace u19028386_HomeW04.Controllers
 
         public ActionResult Views()
         {
-            return View();
+            List<Fish> fishs = GetFish();
+            return View(fishs);
+        }
+
+        public List<Fish> GetFish()
+        {
+            List<Fish> fishViewModels = new List<Fish>();
+            Fish fish1 = new Fish("hd", "hdf", 4);
+            fishViewModels.Add(fish1);
+            return fishViewModels;
         }
     }
 }
