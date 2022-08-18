@@ -6,6 +6,7 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -15,14 +16,29 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Uses Cases", "Index", "HelloAso")</li>
+
+                    <li>@Html.ActionLink("About", "About", "HelloAso")</li>
+
+                    <li>@Html.ActionLink("Our People", "People", "HelloAso")</li>
+
+                    <li>@Html.ActionLink("Our Places", "Places", "HelloAso")</li>
+                    <li>@Html.ActionLink("Take Action", "TakeAction", "HelloAso")</li>
+                    <li>@Html.ActionLink("Blog", "Blog", "HelloAso")</li>
+                    <li>@Html.ActionLink("Join Us", "JoinUs", "HelloAso")</li>
+                    <li>@Html.ActionLink("Donations", "Donations", "HelloAso")</li>
+                    <li>@Html.ActionLink("Leave A Message", "Messages", "HelloAso")</li>
                 </ul>
             </div>
         </div>
@@ -30,8 +46,27 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        <footer style="position:fixed; background-color: black; left: 0; bottom: 0; width: 100%; text-align: center; place-items:center">
+            <div class="row">
+                <img src="~/Pictures/nav1.png" />
+                <img src="~/Pictures/nav2.png" />
+                <img src="~/Pictures/nav3.png" />
+                <img src="~/Pictures/nav4.png" />
+                <img src="~/Pictures/nav5.png" />
+                <img src="~/Pictures/nav6.png" />
+                <img src="~/Pictures/nav7.png" />
+                <img src="~/Pictures/nav8.png" />
+                <img src="~/Pictures/nav9.png" />
+            </div>
+
+            <div class="row">
+                <a href="#" class="fa fa-facebook" style="color:white; "></a>
+                <a href="#" class="fa fa-twitter" style="color: white; "></a>
+                <a href="#" class="fa fa-instagram" style="color:white;"></a>
+                <a href="#" class="fa fa-linkedin" style="color:white;"></a>
+                <a href="#" class="fa fa-youtube" style="color:white;"></a>
+            </div>
+            <p>&copy; @DateTime.Now.Year - HelloAsso NPO</p>
         </footer>
     </div>
 

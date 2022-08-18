@@ -164,10 +164,19 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\HelloAso\Index.cshtml" />
+    <Content Include="Views\HelloAso\People.cshtml" />
+    <Content Include="Views\HelloAso\About.cshtml" />
+    <Content Include="Views\HelloAso\Places.cshtml" />
+    <Content Include="Views\HelloAso\TakeAction.cshtml" />
+    <Content Include="Views\HelloAso\Blogs.cshtml" />
+    <Content Include="Views\HelloAso\JoinUs.cshtml" />
+    <Content Include="Views\HelloAso\Messages.cshtml" />
+    <Content Include="Views\HelloAso\Donations.cshtml" />
+    <Content Include="Views\HelloAso\Views.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\HelloAso\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

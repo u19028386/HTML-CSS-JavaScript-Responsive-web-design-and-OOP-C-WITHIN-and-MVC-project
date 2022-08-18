@@ -63,5 +63,10 @@ namespace u19028386_HomeW04.Controllers
         {
             return View();
         }
+
+        public ActionResult Views()
+        {
+            return View();
+        }
     }
 }
