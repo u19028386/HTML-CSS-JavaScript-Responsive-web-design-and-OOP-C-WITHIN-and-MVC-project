@@ -1,4 +1,4 @@
-﻿
+﻿@model List<u19028386_HomeW04.Models.Login>
 @{
     ViewBag.Title = "JoinUs";
 }
@@ -19,7 +19,7 @@
 
     <div class="form-outline form-white mb-4">
         <i class="fa fa-user icon fa-5x"></i>
-        <input type="email" id="mEmail" class="form-control form-control-lg" style="display:inline-block;">
+        <input type="text" id="mEmail" class="form-control form-control-lg" name="mUsername"style="display:inline-block;">
     </div>
     <br />
     <br />
@@ -27,7 +27,7 @@
 
     <div class="form-outline form-white mb-4">
         <i class="fa fa-lock icon fa-5x"></i>
-        <input type="password" id="mPass" class="form-control form-control-lg" style="display:inline-block;">
+        <input type="password" id="mPass" class="form-control form-control-lg" name="mPass" style="display:inline-block;">
     </div>
 
     <br />
@@ -35,9 +35,9 @@
     <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>
     <br />
 
-    <button id="myLogin" class="btn btn-primary" style="width:200px;position:center;">
-        LOGIN
-    </button>
+    <input type="button" value="LOGIN" class="btn btn-primary" onclick="location.href='@Url.Action("Views","HelloAso")'"  style="width:200px;position:center;" />
+      
+    
     <br />
 
     <br />
@@ -53,13 +53,11 @@
 
 
 <script type="text/javascript">
-
-    document.getElementById("myLogin").addEventListener("click", myFunction);
-
-    function myFunction() {
-        document.getElementById("myLogin").onclick = function () { location.href = "localhost:44347/HelloAso/About"; };
-   }
-
+    @foreach (var log in Model)
+            {
+               if(@log.Username == )
+            }
+  
 
 </script>
 

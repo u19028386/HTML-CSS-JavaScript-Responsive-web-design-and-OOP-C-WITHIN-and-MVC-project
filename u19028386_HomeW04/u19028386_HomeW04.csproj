@@ -128,6 +128,7 @@
     <Compile Include="Models\Bird.cs" />
     <Compile Include="Models\Class1.cs" />
     <Compile Include="Models\Fish.cs" />
+    <Compile Include="Models\Login.cs" />
     <Compile Include="Models\Mammal.cs" />
     <Compile Include="Models\NaturalResourcecs.cs" />
     <Compile Include="Models\Plant.cs" />

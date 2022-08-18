@@ -78,5 +78,14 @@ namespace u19028386_HomeW04.Controllers
             fishViewModels.Add(fish1);
             return fishViewModels;
         }
+
+        public List<Login> GetLogins()
+        {
+            List<Login> loginViewModels = new List<Login>();
+            Login logindetails = new Login("admin", "password");
+            loginViewModels.Add(logindetails);
+            return loginViewModels;
+        }
+
     }
 }
