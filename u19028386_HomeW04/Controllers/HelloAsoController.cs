@@ -55,6 +55,22 @@ namespace u19028386_HomeW04.Controllers
             return View();
         }
 
+        [HttpPost]
+        public ActionResult JoinUs(string username, string password)
+        {
+            if(username== "admin" && password == "ppassword")
+            {
+                 return View("Views");
+            }
+
+            ViewBag.Incorrect = "Username and Password Incorrect. Please retry!";
+            return View("JoinUs");
+            
+            
+        }
+
+
+
         public ActionResult Messages()
         {
             return View();
@@ -74,18 +90,14 @@ namespace u19028386_HomeW04.Controllers
         public List<Fish> GetFish()
         {
             List<Fish> fishViewModels = new List<Fish>();
-            Fish fish1 = new Fish("hd", "hdf", 4);
+            Fish fish1 = new Fish("hd", "hdf", 4, 4, "Sea","category" );
             fishViewModels.Add(fish1);
             return fishViewModels;
         }
 
-        public List<Login> GetLogins()
-        {
-            List<Login> loginViewModels = new List<Login>();
-            Login logindetails = new Login("admin", "password");
-            loginViewModels.Add(logindetails);
-            return loginViewModels;
-        }
+    
+
+        
 
     }
 }
