@@ -110,8 +110,26 @@ namespace u19028386_HomeW04.Controllers
         public List<Fish> GetFish()
         {
             List<Fish> fishViewModels = new List<Fish>();
-            Fish fish1 = new Fish("hd", "hdf", 4, 4, "Sea","category" );
+            Fish fish1 = new Fish("Blue Tang", "hdf", 4, 4, true);
+            Fish fish2 = new Fish("Clown Fish", "hdf", 100, 8, true);
+            Fish fish3 = new Fish("Angel Fish", "hdf", 67, 9, false);
+            Fish fish4 = new Fish("Gold Fish", "hdf", 800, 4, true);
+            Fish fish5 = new Fish("Butterfly Fish", "hdf", 400, 5, true);
+            Fish fish6 = new Fish("Pufferfish", "hdf", 49, 12, false);
+            Fish fish7 = new Fish("Koi Fish", "hdf", 975, 4, true);
+            Fish fish8 = new Fish("male Betta", "hdf", 90, 2, true);
+            Fish fish9 = new Fish("Killi Fish", "hdf", 23, 3, false);
+            Fish fish10 = new Fish("Gourami", "hdf", 12, 9, true);
             fishViewModels.Add(fish1);
+            fishViewModels.Add(fish2);
+            fishViewModels.Add(fish3);
+            fishViewModels.Add(fish4);
+            fishViewModels.Add(fish5);
+            fishViewModels.Add(fish6);
+            fishViewModels.Add(fish7);
+            fishViewModels.Add(fish8);
+            fishViewModels.Add(fish9);
+            fishViewModels.Add(fish10);
             return fishViewModels;
         }
 
