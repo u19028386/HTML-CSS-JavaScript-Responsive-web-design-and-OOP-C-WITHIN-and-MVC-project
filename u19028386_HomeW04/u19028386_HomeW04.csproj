@@ -180,6 +180,10 @@
     <Content Include="Views\HelloAso\Messages.cshtml" />
     <Content Include="Views\HelloAso\Donations.cshtml" />
     <Content Include="Views\HelloAso\Views.cshtml" />
+    <Content Include="Views\HelloAso\BirdView.cshtml" />
+    <Content Include="Views\HelloAso\PlantView.cshtml" />
+    <Content Include="Views\HelloAso\MammalView.cshtml" />
+    <Content Include="Views\HelloAso\FishView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,24 @@
+﻿@model List<u19028386_HomeW04.Models.Fish>
+@{
+    ViewBag.Title = "FishView";
+}
+
+<h6>Fish</h6>
+
+<table>
+    <tr>
+        <th>Country</th>
+        <th>Name</th>
+        <th>Amount</th>
+    </tr>
+
+    @foreach (var fish in Model)
+    {
+        <tr>
+            <td>@fish.Country</td>
+            <td>@fish.Name</td>
+            <td>@fish.Amount</td>
+        </tr>
+    }
+</table>
+

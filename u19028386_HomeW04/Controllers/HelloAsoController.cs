@@ -81,6 +81,26 @@ namespace u19028386_HomeW04.Controllers
             return View();
         }
 
+        public ActionResult BirdView()
+        {
+            return View();
+        }
+
+        public ActionResult PlantView()
+        {
+            return View();
+        }
+
+        public ActionResult MammalView()
+        {
+            return View();
+        }
+
+        public ActionResult FishView()
+        {
+            return View();
+        }
+
         public ActionResult Views()
         {
             List<Fish> fishs = GetFish();
@@ -97,7 +117,7 @@ namespace u19028386_HomeW04.Controllers
 
     
 
-        
+    
 
     }
 }
