@@ -20,6 +20,15 @@ namespace u19028386_HomeW04.Models
             set { _SeaWater = value; }
         }
 
+        public override string getInfo()
+        {
+            return base.getInfo();
+        }
+        public override bool FoundInDesert()
+        {
+            return false;
+        }
+
       
 
     }

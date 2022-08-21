@@ -5,7 +5,7 @@ using System.Web;
 
 namespace u19028386_HomeW04.Models
 {
-    public class NaturalResourcecs
+    public abstract class NaturalResourcecs
     {
         private string _Name;
         private string _Country;
@@ -45,12 +45,21 @@ namespace u19028386_HomeW04.Models
 
         public bool IsEndangered()
         {
-            if (this.Amount == 50)
+            if (this.Amount < 50)
             {
                 return true;
             }
 
             else return false;
         }
+
+        public virtual string getInfo()
+        {
+            return Name + " originally from " + Country + " , and there is only " + Amount.ToString() + " left.";
+        }
+
+        public abstract bool FoundInDesert();
+
     }
+        
 }

@@ -1,7 +1,35 @@
-﻿
+﻿@model List<u19028386_HomeW04.Models.Mammal>
 @{
     ViewBag.Title = "MammalView";
 }
 
-<h2>MammalView</h2>
+<h6>Mammal</h6>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Amount</th>
+        <th>Maximum Weight/Mass</th>
+        <th>Type</th>
+        <th>Critically Endangered</th>
+        <th>Survive In Desert</th>
+        <th>Info</th>
+    </tr>
+
+    @foreach (var mammal in Model)
+    {
+        <tr>
+            <td>@mammal.Name</td>
+            <td>@mammal.Country</td>
+            <td>@mammal.Amount</td>
+            <td>@mammal.MaxWeight</td>
+            <td>@mammal.Type</td>
+            <td>@mammal.IsEndangered()</td>
+            <td>@mammal.FoundInDesert()</td>
+            <td>@mammal.getInfo()</td>
+        </tr>
+    }
+</table>
+
 

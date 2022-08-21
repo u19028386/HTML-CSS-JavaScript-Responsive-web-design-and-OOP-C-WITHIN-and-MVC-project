@@ -93,7 +93,34 @@ namespace u19028386_HomeW04.Controllers
 
         public ActionResult MammalView()
         {
-            return View();
+            List<Mammal> mammals = GetMammal();
+            return View(mammals);
+        }
+
+        public List<Mammal> GetMammal()
+        {
+            List<Mammal> mammals = new List<Mammal>();
+            Mammal mammal1 = new Mammal("Black Rhino", "South Africa", 4, 200, "Herbivore");
+            Mammal mammal2 = new Mammal("Amur Leopard", "Swaziland", 100, 90, "Carnivore");
+            Mammal mammal3 = new Mammal("River Gorilla", "Congo", 67, 150, "Herbivore");
+            Mammal mammal4 = new Mammal("Javan Rhino", "Nigeria", 800, 200, "Herbivore");
+            Mammal mammal5 = new Mammal("Sunda Tiger", "Cuba", 400, 110, "Carnivore");
+            Mammal mammal6 = new Mammal("Lowland Gorilla", "Canada", 49, 160, "Herbivore");
+            Mammal mammal7 = new Mammal("Asian Elephant", "New Zealand", 975, 350, "Herbivore");
+            Mammal mammal8 = new Mammal("Bonobo", "Lesotho", 90, 78, "Carnivore");
+            Mammal mammal9 = new Mammal("Chimpanzee", "Russia", 23, 90, "Herbivore");
+            Mammal mammal10 = new Mammal("Green Turtle", "Mozambique", 12, 60, "Herbivore");
+            mammals.Add(mammal1);
+            mammals.Add(mammal2);
+            mammals.Add(mammal3);
+            mammals.Add(mammal4);
+            mammals.Add(mammal5);
+            mammals.Add(mammal6);
+            mammals.Add(mammal7);
+            mammals.Add(mammal8);
+            mammals.Add(mammal9);
+            mammals.Add(mammal10);
+            return mammals;
         }
 
         public ActionResult FishView()
@@ -110,16 +137,16 @@ namespace u19028386_HomeW04.Controllers
         public List<Fish> GetFish()
         {
             List<Fish> fishs = new List<Fish>();
-            Fish fish1 = new Fish("Blue Tang", "hdf", 4, 4, true);
-            Fish fish2 = new Fish("Clown Fish", "hdf", 100, 8, true);
-            Fish fish3 = new Fish("Angel Fish", "hdf", 67, 9, false);
-            Fish fish4 = new Fish("Gold Fish", "hdf", 800, 4, true);
-            Fish fish5 = new Fish("Butterfly Fish", "hdf", 400, 5, true);
-            Fish fish6 = new Fish("Pufferfish", "hdf", 49, 12, false);
-            Fish fish7 = new Fish("Koi Fish", "hdf", 975, 4, true);
-            Fish fish8 = new Fish("male Betta", "hdf", 90, 2, true);
-            Fish fish9 = new Fish("Killi Fish", "hdf", 23, 3, false);
-            Fish fish10 = new Fish("Gourami", "hdf", 12, 9, true);
+            Fish fish1 = new Fish("Blue Tang", "South Africa", 4, 4, true);
+            Fish fish2 = new Fish("Clown Fish", "Swaziland", 100, 8, true);
+            Fish fish3 = new Fish("Angel Fish", "Congo", 67, 9, false);
+            Fish fish4 = new Fish("Gold Fish", "Nigeria", 800, 4, true);
+            Fish fish5 = new Fish("Butterfly Fish", "Cuba", 400, 5, true);
+            Fish fish6 = new Fish("Pufferfish", "Canada", 49, 12, false);
+            Fish fish7 = new Fish("Koi Fish", "New Zealand", 975, 4, true);
+            Fish fish8 = new Fish("Betta Fish", "Lesotho", 90, 2, true);
+            Fish fish9 = new Fish("Killi Fish", "Russia", 23, 3, false);
+            Fish fish10 = new Fish("Gourami Fish", "Mozambique", 12, 9, true);
             fishs.Add(fish1);
             fishs.Add(fish2);
             fishs.Add(fish3);

@@ -12,19 +12,23 @@
         <th>Amount</th>
         <th>Maximum Weight/Mass</th>
         <th>Sea Water</th>
-        <th>Is Endangered</th>
+        <th>Critically Endangered</th>
+        <th>Survive In Desert</th>
+        <th>Info</th>
     </tr>
 
     @foreach (var fish in Model)
     {
-        <tr>
-            <td>@fish.Name</td>
-            <td>@fish.Country</td>
-            <td>@fish.Amount</td>
-            <td>@fish.MaxWeight</td>
-            <td>@fish.SeaWater</td>
-            <td>@fish.IsEndangered()</td>
-        </tr>
+<tr>
+    <td>@fish.Name</td>
+    <td>@fish.Country</td>
+    <td>@fish.Amount</td>
+    <td>@fish.MaxWeight</td>
+    <td>@fish.SeaWater</td>
+    <td>@fish.IsEndangered()</td>
+    <td>@fish.FoundInDesert()</td>
+    <td>@fish.getInfo()</td>
+</tr>
     }
 </table>
 

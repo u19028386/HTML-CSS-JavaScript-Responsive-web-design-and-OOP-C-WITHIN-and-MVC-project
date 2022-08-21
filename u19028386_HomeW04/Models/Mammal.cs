@@ -5,21 +5,28 @@ using System.Web;
 
 namespace u19028386_HomeW04.Models
 {
-    public class Mammal
+    public class Mammal : NaturalResourcecs
     {
-        private string _Country;
-        private int _Amount;
+      
+        private string _Type;
 
-        public string Country
+        public Mammal(string name, string country, int amount, int maxweight, string type) : base(name, country, amount, maxweight)
         {
-            get { return _Country; }
-            set { _Country = value; }
+            _Type = type;
+        }
+        public string Type
+        {
+            get { return _Type; }
+            set { _Type = value; }
         }
 
-        public int Amount
+        public override string getInfo()
         {
-            get { return _Amount; }
-            set { _Amount = value; }
+            return base.getInfo();
+        }
+        public override bool FoundInDesert()
+        {
+            return false;
         }
     }
 }

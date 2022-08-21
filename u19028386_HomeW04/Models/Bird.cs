@@ -5,21 +5,28 @@ using System.Web;
 
 namespace u19028386_HomeW04.Models
 {
-    public class Bird
+    public class Bird : NaturalResourcecs
     {
-        private string _Country;
-        private int _Amount;
+       
+        private int _Speed;
 
-        public string Country
+        public Bird(string name, string country, int amount, int maxweight, int speed) : base(name, country, amount, maxweight)
         {
-            get { return _Country; }
-            set { _Country = value; }
+            _Speed = speed;
+        }
+        public int Speed
+        {
+            get { return _Speed; }
+            set { _Speed = value; }
         }
 
-        public int Amount
+        public override string getInfo()
         {
-            get { return _Amount; }
-            set { _Amount = value; }
+            return base.getInfo();
+        }
+        public override bool FoundInDesert()
+        {
+            return false;
         }
     }
 }

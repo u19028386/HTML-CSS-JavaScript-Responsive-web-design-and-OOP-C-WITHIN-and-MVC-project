@@ -5,21 +5,27 @@ using System.Web;
 
 namespace u19028386_HomeW04.Models
 {
-    public class Plant
+    public class Plant : NaturalResourcecs
     {
-        private string _Country;
-        private int _Amount;
+        private int _MaxHeight;
 
-        public string Country
+        public Plant(string name, string country, int amount, int maxweight, int maxheight) : base(name, country, amount, maxweight)
         {
-            get { return _Country; }
-            set { _Country = value; }
+            _MaxHeight = maxheight;
+        }
+        public int MaxHeight
+        {
+            get { return _MaxHeight; }
+            set { _MaxHeight = value; }
         }
 
-        public int Amount
+        public override string getInfo()
         {
-            get { return _Amount; }
-            set { _Amount = value; }
+            return base.getInfo();
+        }
+        public override bool FoundInDesert()
+        {
+            return true;
         }
     }
 }
