@@ -1,50 +1,70 @@
-﻿@{
-    ViewBag.Title = "TakeAction";
-}
+﻿@using u19028386_HomeW04.Models
+@model List<NaturalResourcecs>
 
-<h2>TakeAction</h2>
+<head>
+    <style>
+        #myT {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+            #myT td, #myT th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #myT tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            #myT tr:hover {
+                background-color: #ddd;
+            }
+
+            #myT th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #04AA6D;
+                color: white;
+            }
+    </style>
+</head>
+
+<h2>Ten countries each have more than 500 threatened species of plants, birds, mammals, and fish</h2>
+<h4>Number of species classified by the International Union for Conservation of Nature as endangered if amount less than 50.</h4>
+
+<div style="margin-bottom:11%">
+    <table id="myT" style="margin-bottom:10%">
+        <tr>
+            <th>Name</th>
+            <th>Country</th>
+            <th>Amount</th>
+            <th>Maximum Weight/Mass (KG)</th>
+            <th>Critically Endangered</th>
+            <th>Survive In Desert</th>
+            <th>Info</th>
+        </tr>
+
+        @foreach (var n in Model)
+        {
+            <tr>
+                <td>@n.Name</td>
+                <td>@n.Country</td>
+                <td>@n.Amount</td>
+                <td>@n.MaxWeight</td>
+                <td>@n.IsEndangered()</td>
+                <td>@n.FoundInDesert()</td>
+                <td>@n.getInfo()</td>
+            </tr>
+        }
+    </table>
+
+</div>
 
 
 
 
 
 
-<form style="text-align:center; border:5px solid lightgrey;">
-    <div>
-        <h2>LOGIN</h2>
-    </div>
-    <br />
-
-
-
-    <div>
-        <h3>Please enter your email and password</h3>
-    </div>
-    <br />
-
-
-    <div class="form-outline form-white mb-4">
-        <i class="fa fa-user icon fa-5x"></i>
-        <input type="text" id="mEmail" class="form-control form-control-lg" name="mUsername" style="display:inline-block;">
-    </div>
-    <br />
-    <br />
-
-
-    <div class="form-outline form-white mb-4">
-        <i class="fa fa-lock icon fa-5x"></i>
-        <input type="password" id="mPass" class="form-control form-control-lg" name="mPass" style="display:inline-block;">
-    </div>
-
-    <br />
-
-
-
-    <input type="submit" value="LOGIN" class="btn btn-primary" style="width:200px;position:center;" />
-
-    <br />
-
-    <br />
-
-
-</form>

@@ -173,7 +173,6 @@
     <Content Include="Views\HelloAso\Index.cshtml" />
     <Content Include="Views\HelloAso\People.cshtml" />
     <Content Include="Views\HelloAso\About.cshtml" />
-    <Content Include="Views\HelloAso\Places.cshtml" />
     <Content Include="Views\HelloAso\TakeAction.cshtml" />
     <Content Include="Views\HelloAso\Blogs.cshtml" />
     <Content Include="Views\HelloAso\JoinUs.cshtml" />

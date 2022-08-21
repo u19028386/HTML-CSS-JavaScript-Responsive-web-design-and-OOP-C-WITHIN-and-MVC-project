@@ -1,33 +1,64 @@
-﻿
+﻿@model List<u19028386_HomeW04.Models.Bird>
 @{
     ViewBag.Title = "BirdView";
 }
 
-<h2>BirdView</h2>
 
-<table>
+<head>
+    <style>
+        #myT {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+            #myT td, #myT th {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            #myT tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+
+            #myT tr:hover {
+                background-color: #ddd;
+            }
+
+            #myT th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #04AA6D;
+                color: white;
+            }
+    </style>
+</head>
+<h3>Bird</h3>
+
+<table id="myT" style="margin-bottom:10%">
     <tr>
         <th>Name</th>
         <th>Country</th>
         <th>Amount</th>
-        <th>Maximum Weight/Mass</th>
+        <th>Maximum Weight/Mass (KG)</th>
         <th>Speed</th>
         <th>Critically Endangered</th>
         <th>Survive In Desert</th>
         <th>Info</th>
     </tr>
 
-    @foreach (var plant in Model)
+    @foreach (var bird in Model)
     {
         <tr>
-            <td>@plant.Name</td>
-            <td>@plant.Country</td>
-            <td>@plant.Amount</td>
-            <td>@plant.MaxWeight</td>
-            <td>@plant.Speed</td>
-            <td>@plant.IsEndangered()</td>
-            <td>@plant.FoundInDesert()</td>
-            <td>@plant.getInfo()</td>
+            <td>@bird.Name</td>
+            <td>@bird.Country</td>
+            <td>@bird.Amount</td>
+            <td>@bird.MaxWeight</td>
+            <td>@bird.Speed</td>
+            <td>@bird.IsEndangered()</td>
+            <td>@bird.FoundInDesert()</td>
+            <td>@bird.getInfo()</td>
 
         </tr>
     }

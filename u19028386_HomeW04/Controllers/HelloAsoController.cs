@@ -15,34 +15,107 @@ namespace u19028386_HomeW04.Controllers
             return View();
         }
 
-        public ActionResult WelcomePage()
-        {
-            return View();
-        }
+       
 
         public ActionResult People()
         {
             return View();
         }
 
-        public ActionResult Purpose()
-        {
-            return View();
-        }
+        
 
         public ActionResult About()
         {
             return View();
         }
 
-        public ActionResult Places()
-        {
-            return View();
-        }
+      
 
         public ActionResult TakeAction()
         {
-            return View();
+            List<NaturalResourcecs> naturals = new List<NaturalResourcecs>();
+            Bird bird1 = new Bird("Kakapo", "South Africa", 4, 12, 2);
+            Bird bird2 = new Bird("Fruit Dove", "Swaziland", 100, 9, 1);
+            Bird bird3 = new Bird("Grebe", "Congo", 67, 1, 1);
+            Bird bird4 = new Bird("Snowy Owl", "Nigeria", 800, 2, 1);
+            Bird bird5 = new Bird("Currasow", "Cuba", 400, 1, 1);
+            Bird bird6 = new Bird("Condor", "Canada", 49, 6, 2);
+            Bird bird7 = new Bird("Kiwi", "New Zealand", 975, 3, 1);
+            Bird bird8 = new Bird("Grey Parrot", "Lesotho", 90, 7, 3);
+            Bird bird9 = new Bird("Bald Ibis", "Russia", 23, 9, 1);
+            Bird bird10 = new Bird("Lorikeets", "Mozambique", 12, 6, 1);
+            Plant plant1 = new Plant("Prickly Cica", "South Africa", 4, 12, 2);
+            Plant plant2 = new Plant("Micholitzii", "Swaziland", 100, 9, 5);
+            Plant plant3 = new Plant("Preauxiana", "Congo", 67, 1, 2);
+            Plant plant4 = new Plant("Anegadensis", "Nigeria", 800, 2, 3);
+            Plant plant5 = new Plant("Anglica", "Cuba", 400, 1, 6);
+            Plant plant6 = new Plant("Titanum", "Canada", 49, 6, 6);
+            Plant plant7 = new Plant("Muscipula", "New Zealand", 975, 3, 7);
+            Plant plant8 = new Plant("Revoluta", "Lesotho", 90, 7, 1);
+            Plant plant9 = new Plant("Cycas", "Russia", 23, 9, 9);
+            Plant plant10 = new Plant("Dionaea", "Mozambique", 12, 6, 4);
+            Mammal mammal1 = new Mammal("Black Rhino", "South Africa", 4, 200, "Herbivore");
+            Mammal mammal2 = new Mammal("Amur Leopard", "Swaziland", 100, 90, "Carnivore");
+            Mammal mammal3 = new Mammal("River Gorilla", "Congo", 67, 150, "Herbivore");
+            Mammal mammal4 = new Mammal("Javan Rhino", "Nigeria", 800, 200, "Herbivore");
+            Mammal mammal5 = new Mammal("Sunda Tiger", "Cuba", 400, 110, "Carnivore");
+            Mammal mammal6 = new Mammal("Lowland Gorilla", "Canada", 49, 160, "Herbivore");
+            Mammal mammal7 = new Mammal("Asian Elephant", "New Zealand", 975, 350, "Herbivore");
+            Mammal mammal8 = new Mammal("Bonobo", "Lesotho", 90, 78, "Carnivore");
+            Mammal mammal9 = new Mammal("Chimpanzee", "Russia", 23, 90, "Herbivore");
+            Mammal mammal10 = new Mammal("Green Turtle", "Mozambique", 12, 60, "Herbivore");
+            Fish fish1 = new Fish("Blue Tang", "South Africa", 4, 4, true);
+            Fish fish2 = new Fish("Clown Fish", "Swaziland", 100, 8, true);
+            Fish fish3 = new Fish("Angel Fish", "Congo", 67, 9, false);
+            Fish fish4 = new Fish("Gold Fish", "Nigeria", 800, 4, true);
+            Fish fish5 = new Fish("Butterfly Fish", "Cuba", 400, 5, true);
+            Fish fish6 = new Fish("Pufferfish", "Canada", 49, 12, false);
+            Fish fish7 = new Fish("Koi Fish", "New Zealand", 975, 4, true);
+            Fish fish8 = new Fish("Betta Fish", "Lesotho", 90, 2, true);
+            Fish fish9 = new Fish("Killi Fish", "Russia", 23, 3, false);
+            Fish fish10 = new Fish("Gourami Fish", "Mozambique", 12, 9, true);
+
+            naturals.Add(bird1);
+            naturals.Add(bird2);
+            naturals.Add(bird3);
+            naturals.Add(bird4);
+            naturals.Add(bird5);
+            naturals.Add(bird6);
+            naturals.Add(bird7);
+            naturals.Add(bird8);
+            naturals.Add(bird9);
+            naturals.Add(bird10);
+            naturals.Add(plant1);
+            naturals.Add(plant2);
+            naturals.Add(plant3);
+            naturals.Add(plant4);
+            naturals.Add(plant5);
+            naturals.Add(plant6);
+            naturals.Add(plant7);
+            naturals.Add(plant8);
+            naturals.Add(plant9);
+            naturals.Add(plant10);
+            naturals.Add(mammal1);
+            naturals.Add(mammal2);
+            naturals.Add(mammal3);
+            naturals.Add(mammal4);
+            naturals.Add(mammal5);
+            naturals.Add(mammal6);
+            naturals.Add(mammal7);
+            naturals.Add(mammal8);
+            naturals.Add(mammal9);
+            naturals.Add(mammal10);
+            naturals.Add(fish1);
+            naturals.Add(fish2);
+            naturals.Add(fish3);
+            naturals.Add(fish4);
+            naturals.Add(fish5);
+            naturals.Add(fish6);
+            naturals.Add(fish7);
+            naturals.Add(fish8);
+            naturals.Add(fish9);
+            naturals.Add(fish10);
+            return View(naturals);
         }
 
         public ActionResult Blogs()
