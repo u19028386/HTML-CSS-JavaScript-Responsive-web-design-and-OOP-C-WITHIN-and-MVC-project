@@ -98,18 +98,18 @@ namespace u19028386_HomeW04.Controllers
 
         public ActionResult FishView()
         {
-            return View();
-        }
-
-        public ActionResult Views()
-        {
             List<Fish> fishs = GetFish();
             return View(fishs);
         }
 
+        public ActionResult Views()
+        {
+            return View();
+        }
+
         public List<Fish> GetFish()
         {
-            List<Fish> fishViewModels = new List<Fish>();
+            List<Fish> fishs = new List<Fish>();
             Fish fish1 = new Fish("Blue Tang", "hdf", 4, 4, true);
             Fish fish2 = new Fish("Clown Fish", "hdf", 100, 8, true);
             Fish fish3 = new Fish("Angel Fish", "hdf", 67, 9, false);
@@ -120,17 +120,17 @@ namespace u19028386_HomeW04.Controllers
             Fish fish8 = new Fish("male Betta", "hdf", 90, 2, true);
             Fish fish9 = new Fish("Killi Fish", "hdf", 23, 3, false);
             Fish fish10 = new Fish("Gourami", "hdf", 12, 9, true);
-            fishViewModels.Add(fish1);
-            fishViewModels.Add(fish2);
-            fishViewModels.Add(fish3);
-            fishViewModels.Add(fish4);
-            fishViewModels.Add(fish5);
-            fishViewModels.Add(fish6);
-            fishViewModels.Add(fish7);
-            fishViewModels.Add(fish8);
-            fishViewModels.Add(fish9);
-            fishViewModels.Add(fish10);
-            return fishViewModels;
+            fishs.Add(fish1);
+            fishs.Add(fish2);
+            fishs.Add(fish3);
+            fishs.Add(fish4);
+            fishs.Add(fish5);
+            fishs.Add(fish6);
+            fishs.Add(fish7);
+            fishs.Add(fish8);
+            fishs.Add(fish9);
+            fishs.Add(fish10);
+            return fishs;
         }
 
     

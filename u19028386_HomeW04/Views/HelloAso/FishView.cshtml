@@ -7,17 +7,23 @@
 
 <table>
     <tr>
-        <th>Country</th>
         <th>Name</th>
+        <th>Country</th>
         <th>Amount</th>
+        <th>Maximum Weight/Mass</th>
+        <th>Sea Water</th>
+        <th>Is Endangered</th>
     </tr>
 
     @foreach (var fish in Model)
     {
         <tr>
-            <td>@fish.Country</td>
             <td>@fish.Name</td>
+            <td>@fish.Country</td>
             <td>@fish.Amount</td>
+            <td>@fish.MaxWeight</td>
+            <td>@fish.SeaWater</td>
+            <td>@fish.IsEndangered()</td>
         </tr>
     }
 </table>
