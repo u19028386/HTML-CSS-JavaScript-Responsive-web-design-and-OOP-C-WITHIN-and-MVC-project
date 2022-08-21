@@ -5,3 +5,33 @@
 
 <h2>BirdView</h2>
 
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Country</th>
+        <th>Amount</th>
+        <th>Maximum Weight/Mass</th>
+        <th>Speed</th>
+        <th>Critically Endangered</th>
+        <th>Survive In Desert</th>
+        <th>Info</th>
+    </tr>
+
+    @foreach (var plant in Model)
+    {
+        <tr>
+            <td>@plant.Name</td>
+            <td>@plant.Country</td>
+            <td>@plant.Amount</td>
+            <td>@plant.MaxWeight</td>
+            <td>@plant.Speed</td>
+            <td>@plant.IsEndangered()</td>
+            <td>@plant.FoundInDesert()</td>
+            <td>@plant.getInfo()</td>
+
+        </tr>
+    }
+</table>
+
+
+

@@ -19,16 +19,29 @@
 
     @foreach (var fish in Model)
     {
-<tr>
-    <td>@fish.Name</td>
-    <td>@fish.Country</td>
-    <td>@fish.Amount</td>
-    <td>@fish.MaxWeight</td>
-    <td>@fish.SeaWater</td>
-    <td>@fish.IsEndangered()</td>
-    <td>@fish.FoundInDesert()</td>
-    <td>@fish.getInfo()</td>
-</tr>
+        <tr>
+            <td>@fish.Name</td>
+            <td>@fish.Country</td>
+            <td>@fish.Amount</td>
+            <td>@fish.MaxWeight</td>
+            <td>@fish.SeaWater</td>
+            <td>@fish.IsEndangered()</td>
+            <td>@fish.FoundInDesert()</td>
+            <td>@fish.getInfo()</td>
+        </tr>
     }
 </table>
+
+<br />
+
+@using (Html.BeginForm("FishView", "HelloAso", FormMethod.Post))
+{
+    <input type="text" form="name" />
+    <input type="text" form="country" />
+    <input type="number" form="amount" />
+    <input type="number" form="maxweight" />
+    <input type="text" form="seaWater" />
+    <button type="submit"></button>
+  
+}
 

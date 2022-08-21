@@ -83,13 +83,69 @@ namespace u19028386_HomeW04.Controllers
 
         public ActionResult BirdView()
         {
-            return View();
+            List<Bird> birds = GetBird();
+            return View(birds);
         }
+
+        public List<Bird> GetBird()
+        {
+            List<Bird> birds = new List<Bird>();
+            Bird bird1 = new Bird("Kakapo", "South Africa", 4, 12, 2);
+            Bird bird2 = new Bird("Fruit Dove", "Swaziland", 100, 9, 1);
+            Bird bird3 = new Bird("Grebe", "Congo", 67, 1, 1);
+            Bird bird4 = new Bird("Snowy Owl", "Nigeria", 800, 2, 1);
+            Bird bird5 = new Bird("Currasow", "Cuba", 400, 1, 1);
+            Bird bird6 = new Bird("Condor", "Canada", 49, 6, 2);
+            Bird bird7 = new Bird("Kiwi", "New Zealand", 975, 3, 1);
+            Bird bird8 = new Bird("Grey Parrot", "Lesotho", 90, 7, 3);
+            Bird bird9 = new Bird("Bald Ibis", "Russia", 23, 9, 1);
+            Bird bird10 = new Bird("Lorikeets", "Mozambique", 12, 6, 1);
+            birds.Add(bird1);
+            birds.Add(bird2);
+            birds.Add(bird3);
+            birds.Add(bird4);
+            birds.Add(bird5);
+            birds.Add(bird6);
+            birds.Add(bird7);
+            birds.Add(bird8);
+            birds.Add(bird9);
+            birds.Add(bird10);
+            return birds;
+        }
+
 
         public ActionResult PlantView()
         {
-            return View();
+            List<Plant> plants = GetPlant();
+            return View(plants);
         }
+
+        public List<Plant> GetPlant()
+        {
+            List<Plant> plants = new List<Plant>();
+            Plant plant1 = new Plant("Prickly Cica", "South Africa", 4, 12, 2);
+            Plant plant2 = new Plant("Micholitzii", "Swaziland", 100, 9, 5);
+            Plant plant3 = new Plant("Preauxiana", "Congo", 67, 1, 2);
+            Plant plant4 = new Plant("Anegadensis", "Nigeria", 800, 2, 3);
+            Plant plant5 = new Plant("Anglica", "Cuba", 400, 1, 6);
+            Plant plant6 = new Plant("Titanum", "Canada", 49, 6, 6);
+            Plant plant7 = new Plant("Muscipula", "New Zealand", 975, 3, 7);
+            Plant plant8 = new Plant("Revoluta", "Lesotho", 90, 7, 1);
+            Plant plant9 = new Plant("Cycas", "Russia", 23, 9, 9);
+            Plant plant10 = new Plant("Dionaea", "Mozambique", 12, 6, 4);
+            plants.Add(plant1);
+            plants.Add(plant2);
+            plants.Add(plant3);
+            plants.Add(plant4);
+            plants.Add(plant5);
+            plants.Add(plant6);
+            plants.Add(plant7);
+            plants.Add(plant8);
+            plants.Add(plant9);
+            plants.Add(plant10);
+            return plants;
+        }
+
 
         public ActionResult MammalView()
         {
@@ -123,6 +179,7 @@ namespace u19028386_HomeW04.Controllers
             return mammals;
         }
 
+        [HttpGet]
         public ActionResult FishView()
         {
             List<Fish> fishs = GetFish();
@@ -160,9 +217,24 @@ namespace u19028386_HomeW04.Controllers
             return fishs;
         }
 
-    
+      
 
-    
+        [HttpPost]
+        public ActionResult FishView(string name, string country, int amount, int maxweight, bool seawater)
+        {
 
-    }
-}
+            List<Fish> fishs = new List<Fish>();
+            Fish fish1 = new Fish(name,country, amount, maxweight, seawater);
+            fishs.Add(fish1);
+
+            return View(fishs);
+
+            }
+
+        }
+
+
+
+
+
+ }
