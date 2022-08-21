@@ -224,10 +224,10 @@ namespace u19028386_HomeW04.Controllers
         {
 
             List<Fish> fishs = new List<Fish>();
-            Fish fish1 = new Fish(name,country, amount, maxweight, seawater);
-            fishs.Add(fish1);
+            Fish fish11 = new Fish(name,country, Convert.ToInt32(amount), Convert.ToInt32(maxweight),Convert.ToBoolean(seawater));
+            fishs.Add(fish11);
 
-            return View(fishs);
+            return View();
 
             }
 
