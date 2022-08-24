@@ -1,11 +1,10 @@
-﻿@model List<u19028386_HomeW04.Models.Fish>
+﻿@model List<u19028386_HomeW04.Models.Bird>
 @{
-    ViewBag.Title = "DeleteFish";
+    ViewBag.Title = "DeleteBird";
 }
 
-<h2>Delete Fish</h2>
-
-@using (Html.BeginForm("DeleteFish", "HelloAso", FormMethod.Post))
+<h2>Delete Bird</h2>
+@using (Html.BeginForm("DeleteBird", "HelloAso", FormMethod.Post))
 {
     <label for="name">Name</label>
     <input type="text" name="name" />
@@ -21,6 +20,3 @@
     </div>
 
 }
-
-
-

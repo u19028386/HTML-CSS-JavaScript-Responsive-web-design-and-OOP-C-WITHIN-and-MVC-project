@@ -16,27 +16,27 @@
                 padding: 8px;
             }
 
-        #myT tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
+            #myT tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
 
-        #myT tr:hover {
-            background-color: #ddd;
-        }
+            #myT tr:hover {
+                background-color: #ddd;
+            }
 
-        #myT th {
-            padding-top: 12px;
-            padding-bottom: 12px;
-            text-align: left;
-            background-color: #04AA6D;
-            color: white;
-        }
+            #myT th {
+                padding-top: 12px;
+                padding-bottom: 12px;
+                text-align: left;
+                background-color: #04AA6D;
+                color: white;
+            }
     </style>
 </head>
 
-<h3>Fish</h3>
+<h3 style="text-align:center;">Fish Table</h3>
 
-<table id="myT" >
+<table id="myT">
     <tr>
         <th>Name</th>
         <th>Country</th>
@@ -65,15 +65,25 @@
 
 <br />
 
+<div class="container">
+    <div class="row">
 
-<div class="row" >
-    <a href="@Url.Action("AddFish","HelloAso")">Add Fish</a>
+        <div class="col-sm" style="display:inline-block;">
+            <input type="button" value="Add" class="btn btn-default" style="width:100px;background-color:green;" onclick="location.href='@Url.Action("AddFish","HelloAso")'" />
+        </div>
+
+        <div class="col-sm" style="display:inline-block;">
+            <input type="button" value="Update" class="btn btn-default" style="width:100px;background-color:yellow;" onclick="location.href='@Url.Action("UpdateFish","HelloAso")'" />
+        </div>
+
+        <div class="col-sm" style="display:inline-block;">
+            <input type="button" value="Delete" class="btn btn-default" style="width:100px;background-color:red;" onclick="location.href='@Url.Action("DeleteFish","HelloAso")'" />
+        </div>
+
+    </div>
 </div>
 
-<div class="row" >
-    <a href="@Url.Action("DeleteFish","HelloAso")">Delete Fish</a>
-</div>
 
-<div class="row" style="margin-bottom:11%">
-    <a href="@Url.Action("UpdateFish","HelloAso")">Update Fish</a>
-</div>
+<a href="@Url.Action("Views","HelloAso")">Back To View</a>
+
+

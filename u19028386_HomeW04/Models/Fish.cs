@@ -28,8 +28,5 @@ namespace u19028386_HomeW04.Models
         {
             return false;
         }
-
-      
-
     }
 }

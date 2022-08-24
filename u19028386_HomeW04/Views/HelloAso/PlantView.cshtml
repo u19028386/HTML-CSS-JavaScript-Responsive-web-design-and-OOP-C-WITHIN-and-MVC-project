@@ -43,7 +43,7 @@
         <th>Country</th>
         <th>Amount</th>
         <th>Maximum Weight/Mass (KG)</th>
-        <th>Sea Water</th>
+        <th>Maximum Height</th>
         <th>Critically Endangered</th>
         <th>Survive In Desert</th>
         <th>Info</th>
@@ -66,5 +66,25 @@
 </table>
 
 
+<br />
 
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm" style="display:inline-block;">
+            <input type="button" value="Add" class="btn btn-default" style="width:100px;background-color:green;" onclick="location.href='@Url.Action("AddPlant","HelloAso")'" />
+        </div>
+
+        <div class="col-sm" style="display:inline-block;">
+            <input type="button" value="Update" class="btn btn-default" style="width:100px;background-color:yellow;" onclick="location.href='@Url.Action("UpdatePlant","HelloAso")'" />
+        </div>
+
+        <div class="col-sm" style="display:inline-block;">
+            <input type="button" value="Delete" class="btn btn-default" style="width:100px;background-color:red;" onclick="location.href='@Url.Action("DeletePlant","HelloAso")'" />
+        </div>
+
+    </div>
+</div>
+
+<a href="@Url.Action("Views","HelloAso")">Back To View</a>
 

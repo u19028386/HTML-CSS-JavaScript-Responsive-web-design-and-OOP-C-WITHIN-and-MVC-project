@@ -186,6 +186,15 @@
     <Content Include="Views\HelloAso\AddFish.cshtml" />
     <Content Include="Views\HelloAso\UpdateFish.cshtml" />
     <Content Include="Views\HelloAso\DeleteFish.cshtml" />
+    <Content Include="Views\HelloAso\AddPlant.cshtml" />
+    <Content Include="Views\HelloAso\AddMammal.cshtml" />
+    <Content Include="Views\HelloAso\AddBird.cshtml" />
+    <Content Include="Views\HelloAso\DeletePlant.cshtml" />
+    <Content Include="Views\HelloAso\DeleteMammal.cshtml" />
+    <Content Include="Views\HelloAso\DeleteBird.cshtml" />
+    <Content Include="Views\HelloAso\UpdateBird.cshtml" />
+    <Content Include="Views\HelloAso\UpdatePlant.cshtml" />
+    <Content Include="Views\HelloAso\UpdateMammal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -64,5 +64,25 @@
     }
 </table>
 
+<br />
 
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm" style="display:inline-block;">
+            <input type="button" value="Add" class="btn btn-default" style="width:100px;background-color:green;" onclick="location.href='@Url.Action("AddBird","HelloAso")'" />
+        </div>
+
+        <div class="col-sm" style="display:inline-block;">
+            <input type="button" value="Update" class="btn btn-default" style="width:100px;background-color:yellow;" onclick="location.href='@Url.Action("UpdateBird","HelloAso")'" />
+        </div>
+
+        <div class="col-sm" style="display:inline-block;">
+            <input type="button" value="Delete" class="btn btn-default" style="width:100px;background-color:red;" onclick="location.href='@Url.Action("DeleteBird","HelloAso")'" />
+        </div>
+
+    </div>
+</div>
+
+<a href="@Url.Action("Views","HelloAso")">Back To View</a>
 
