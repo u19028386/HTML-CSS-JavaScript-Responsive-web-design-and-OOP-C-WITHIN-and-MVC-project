@@ -183,6 +183,9 @@
     <Content Include="Views\HelloAso\PlantView.cshtml" />
     <Content Include="Views\HelloAso\MammalView.cshtml" />
     <Content Include="Views\HelloAso\FishView.cshtml" />
+    <Content Include="Views\HelloAso\AddFish.cshtml" />
+    <Content Include="Views\HelloAso\UpdateFish.cshtml" />
+    <Content Include="Views\HelloAso\DeleteFish.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

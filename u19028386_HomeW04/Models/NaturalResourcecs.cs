@@ -45,7 +45,7 @@ namespace u19028386_HomeW04.Models
 
         public bool IsEndangered()
         {
-            if (this.Amount < 50)
+            if (this._Amount < 50)
             {
                 return true;
             }
@@ -55,7 +55,7 @@ namespace u19028386_HomeW04.Models
 
         public virtual string getInfo()
         {
-            return Name + " originally from " + Country + " , and there is only " + Amount.ToString() + " left.";
+            return _Name + " originally from " + _Country + " , and there is only " + _Amount.ToString() + " left.";
         }
 
         public abstract bool FoundInDesert();

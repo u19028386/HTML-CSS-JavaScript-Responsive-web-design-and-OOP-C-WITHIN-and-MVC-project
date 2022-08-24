@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "DeleteFish";
+}
+
+<h2>DeleteFish</h2>
+
+@using (Html.BeginForm("DeleteFish", "HelloAso", FormMethod.Post))
+{
+    <label for="name">Name</label>
+    <input type="text" name="name" />
+    <br />
+
+    <label for="country">Country</label>
+    <input type="text" name="country" />
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Delete" class="btn btn-default" />
+        </div>
+    </div>
+
+}
+
+<div>
+    @Html.ActionLink("Back to List", "FishView")
+</div>
+
